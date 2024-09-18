@@ -35,7 +35,6 @@ textarea:focus {
   border-bottom: solid 3px #fa7f82;
   display: inline-block;
   font-weight: 700;
-  font-family: myfont;
   font-size: 95.86px;
   font-weight: 700;
   line-height: 120.88px;
@@ -102,10 +101,8 @@ textarea:focus {
   font-size: 70px;
   font-weight: 700;
   line-height: 100.88px;
-  font-family: myfont;
 }
 .main-section .title p {
-  font-family: myfont;
   font-size: 40px;
   font-weight: 600;
   letter-spacing: -1.5925170183181763px;
@@ -206,12 +203,10 @@ textarea:focus {
   -o-border-radius: 20px;
 }
 .worry-marriage .bg-worry-marriage h2 {
-  font-family: myfont;
 }
 .worry-marriage .bg-worry-marriage p {
   font-size: 25px;
   font-weight: 600;
-  font-family: myfont;
 }
 .worry-marriage .bg-worry-marriage a {
   background-color: var(--second-color);
