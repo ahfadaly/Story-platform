@@ -122,7 +122,6 @@ textarea:focus {
 @media (max-width: 991px) {
   .main-section .title h1 {
     font-size: 40px;
-    line-height: 60px;
   }
   .main-section .title p {
     font-size: 22px !important;
