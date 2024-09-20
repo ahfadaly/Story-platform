@@ -10,32 +10,51 @@ navlinks.forEach((item) => {
   });
 });
 
-// carousel ---------
+/* platform ------------*/
 
-$(`document`).ready(() => {
-  //  customer
-  $(".customer-opinions .owl-carousel").owlCarousel({
-    loop: true,
-    margin: 15,
-    rtl: true,
-    autoplay: true,
-    autoplayTimeout: 2000,
-    dots: true,
-    nav: true,
-    navText: [
-      '<button class="slide-arrow prev-arrow"><i class="fa-solid fa-chevron-left"></i></button>',
-      '<button class="slide-arrow prev-arrow"><i class="fa-solid fa-chevron-right"></i></button>',
-    ],
-    responsive: {
-      0: {
-        items: 1,
-      },
-      769: {
-        items: 2,
-      },
-      1200: {
-        items: 3,
-      },
-    },
+let checkbox = document.querySelectorAll(".wedding-request .box");
+checkbox.forEach((item) => {
+  item.addEventListener(`click`, () => {
+    item.classList.toggle("bgBox");
+  });
+});
+
+let chooseShape = document.querySelectorAll(".choose-shape .kosha .item");
+chooseShape.forEach((item) => {
+  item.addEventListener(`click`, () => {
+    document.querySelector(".choose-shape .kosha .item.active").classList.remove("active");
+    item.classList.add("active");
+  });
+});
+
+let numberSeats = document.querySelectorAll(".choose-shape .number-seats .item");
+numberSeats.forEach((item) => {
+  item.addEventListener(`click`, () => {
+    document.querySelector(".choose-shape .number-seats .item.active").classList.remove("active");
+    item.classList.add("active");
+  });
+});
+
+let buffet = document.querySelectorAll(".choose-shape .buffet .item");
+buffet.forEach((item) => {
+  item.addEventListener(`click`, () => {
+    document.querySelector(".choose-shape .buffet .item.active").classList.remove("active");
+    item.classList.add("active");
+  });
+});
+
+let car = document.querySelectorAll(".choose-shape .car .item");
+car.forEach((item) => {
+  item.addEventListener(`click`, () => {
+    document.querySelector(".choose-shape .car .item.active").classList.remove("active");
+    item.classList.add("active");
+  });
+});
+
+let photo = document.querySelectorAll(".choose-shape .photo .item");
+photo.forEach((item) => {
+  item.addEventListener(`click`, () => {
+    document.querySelector(".choose-shape .photo .item.active").classList.remove("active");
+    item.classList.add("active");
   });
 });

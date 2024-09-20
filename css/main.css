@@ -22,12 +22,11 @@ body {
 }
 
 button:focus,
-a:focus,
 input:focus,
-textarea:focus {
+textarea:focus,
+select:focus {
   box-shadow: none !important;
   outline: none;
-  border: none;
 }
 
 .text-h2 {
@@ -149,7 +148,7 @@ textarea:focus {
 .services .bg-services .box:hover {
   transform: translate(0, -10px);
 }
-.services .bg-services .box:hover a {
+.services .bg-services .box:hover button {
   background-color: var(--second-color);
   color: #fff;
 }
@@ -158,7 +157,7 @@ textarea:focus {
   height: 150px;
   object-fit: contain;
 }
-.services .bg-services .box a {
+.services .bg-services .box button {
   background-color: #dbf0f9;
   border-radius: 36px;
   -webkit-border-radius: 36px;
@@ -341,4 +340,203 @@ textarea:focus {
   box-shadow: 0px 6px 24px 0px #20202029;
   z-index: 898;
   background-color: #fff;
+}
+
+/* platform -------------------------------------------------- */
+.wedding-request .img-preview img {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.product-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  object-fit: cover;
+}
+.wedding-request .box {
+  border-radius: 26.73px;
+  -webkit-border-radius: 26.73px;
+  -moz-border-radius: 26.73px;
+  -ms-border-radius: 26.73px;
+  -o-border-radius: 26.73px;
+  padding: 31.18px;
+  text-align: center;
+  cursor: pointer;
+}
+.wedding-request .box:hover {
+  background-color: #e04e9b;
+}
+.bgBox {
+  background-color: #e04e9b;
+}
+.bgBox img {
+  filter: grayscale(100%) brightness(0) invert(1);
+}
+.bgBox h5 {
+  color: #fff;
+}
+.wedding-request .box img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+.wedding-request .box:hover img {
+  filter: grayscale(100%) brightness(0) invert(1) !important;
+  -webkit-filter: grayscale(100%) brightness(0) invert(1) !important;
+}
+.wedding-request .box:hover h5 {
+  color: #fff;
+}
+.wedding-request .box .checkbox-item {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+.wedding-request .box .checkbox {
+  position: relative;
+  overflow: hidden;
+}
+.wedding-request .box .checkbox_input {
+  position: absolute;
+  top: -100px;
+  left: -100px;
+}
+.wedding-request .box .checkbox_inner {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 3px solid #eee;
+  background: transparent no-repeat center;
+}
+.wedding-request .box .checkbox_input:checked + .checkbox_inner {
+  background-color: #e6e5e566;
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='14px' height='10px' viewBox='0 0 14 10' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- Generator: Sketch 59.1 (86144) - https://sketch.com --%3E%3Ctitle%3Echeck%3C/title%3E%3Cdesc%3ECreated with Sketch.%3C/desc%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='ios_modification' transform='translate(-27.000000, -191.000000)' fill='%23FFFFFF' fill-rule='nonzero'%3E%3Cg id='Group-Copy' transform='translate(0.000000, 164.000000)'%3E%3Cg id='ic-check-18px' transform='translate(25.000000, 23.000000)'%3E%3Cpolygon id='check' points='6.61 11.89 3.5 8.78 2.44 9.84 6.61 14 15.56 5.05 14.5 4'%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-size: 14px 10px;
+}
+.wedding-request .box:hover .checkbox_inner {
+  background-color: #e6e5e566;
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='14px' height='10px' viewBox='0 0 14 10' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- Generator: Sketch 59.1 (86144) - https://sketch.com --%3E%3Ctitle%3Echeck%3C/title%3E%3Cdesc%3ECreated with Sketch.%3C/desc%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='ios_modification' transform='translate(-27.000000, -191.000000)' fill='%23FFFFFF' fill-rule='nonzero'%3E%3Cg id='Group-Copy' transform='translate(0.000000, 164.000000)'%3E%3Cg id='ic-check-18px' transform='translate(25.000000, 23.000000)'%3E%3Cpolygon id='check' points='6.61 11.89 3.5 8.78 2.44 9.84 6.61 14 15.56 5.05 14.5 4'%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-size: 14px 10px;
+}
+.bgBox .checkbox_inner {
+  background-color: #e6e5e566 !important;
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='14px' height='10px' viewBox='0 0 14 10' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- Generator: Sketch 59.1 (86144) - https://sketch.com --%3E%3Ctitle%3Echeck%3C/title%3E%3Cdesc%3ECreated with Sketch.%3C/desc%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='ios_modification' transform='translate(-27.000000, -191.000000)' fill='%23FFFFFF' fill-rule='nonzero'%3E%3Cg id='Group-Copy' transform='translate(0.000000, 164.000000)'%3E%3Cg id='ic-check-18px' transform='translate(25.000000, 23.000000)'%3E%3Cpolygon id='check' points='6.61 11.89 3.5 8.78 2.44 9.84 6.61 14 15.56 5.05 14.5 4'%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E") !important;
+  background-size: 14px 10px;
+}
+.choose-shape .title h2 {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 49.28px;
+  color: #7a8699;
+}
+.choose-shape .item img {
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  width: 100%;
+}
+.choose-shape .item .checkbox-item {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+.choose-shape .item .checkbox {
+  position: relative;
+  overflow: hidden;
+}
+.choose-shape .item .checkbox_input {
+  position: absolute;
+  top: -100px;
+  left: -100px;
+}
+.choose-shape .item .checkbox_inner {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid #eee;
+}
+.choose-shape .item .checkbox_input:checked + .checkbox_inner {
+  background-color: #f78387;
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='14px' height='10px' viewBox='0 0 14 10' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- Generator: Sketch 59.1 (86144) - https://sketch.com --%3E%3Ctitle%3Echeck%3C/title%3E%3Cdesc%3ECreated with Sketch.%3C/desc%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='ios_modification' transform='translate(-27.000000, -191.000000)' fill='%23FFFFFF' fill-rule='nonzero'%3E%3Cg id='Group-Copy' transform='translate(0.000000, 164.000000)'%3E%3Cg id='ic-check-18px' transform='translate(25.000000, 23.000000)'%3E%3Cpolygon id='check' points='6.61 11.89 3.5 8.78 2.44 9.84 6.61 14 15.56 5.05 14.5 4'%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-size: 14px 10px;
+}
+.choose-shape .item:hover {
+  border: solid 1px #f78387;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.choose-shape .item:hover .checkbox_inner {
+  background-color: #f78387;
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='14px' height='10px' viewBox='0 0 14 10' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- Generator: Sketch 59.1 (86144) - https://sketch.com --%3E%3Ctitle%3Echeck%3C/title%3E%3Cdesc%3ECreated with Sketch.%3C/desc%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='ios_modification' transform='translate(-27.000000, -191.000000)' fill='%23FFFFFF' fill-rule='nonzero'%3E%3Cg id='Group-Copy' transform='translate(0.000000, 164.000000)'%3E%3Cg id='ic-check-18px' transform='translate(25.000000, 23.000000)'%3E%3Cpolygon id='check' points='6.61 11.89 3.5 8.78 2.44 9.84 6.61 14 15.56 5.05 14.5 4'%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-size: 14px 10px;
+}
+.choose-shape .active {
+  border: solid 2px #f78387;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.choose-shape .active .checkbox_inner {
+  background-color: #f78387;
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='14px' height='10px' viewBox='0 0 14 10' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- Generator: Sketch 59.1 (86144) - https://sketch.com --%3E%3Ctitle%3Echeck%3C/title%3E%3Cdesc%3ECreated with Sketch.%3C/desc%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='ios_modification' transform='translate(-27.000000, -191.000000)' fill='%23FFFFFF' fill-rule='nonzero'%3E%3Cg id='Group-Copy' transform='translate(0.000000, 164.000000)'%3E%3Cg id='ic-check-18px' transform='translate(25.000000, 23.000000)'%3E%3Cpolygon id='check' points='6.61 11.89 3.5 8.78 2.44 9.84 6.61 14 15.56 5.05 14.5 4'%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-size: 14px 10px;
+}
+
+.btn-request {
+  background: #1dc8d7;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+.btn-request:hover {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+.data_request form label {
+  color: #7a8699;
+  font-size: 20px;
+  font-weight: 400;
+}
+.data_request form select,
+.financing_request input,
+.confirm input,
+.data_request form .date {
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  height: 45px;
+}
+
+.data_request .form-check-input {
+  vertical-align: inherit;
+}
+.honeymoon .form-check-input {
+  vertical-align: top;
+}
+.data_request .form-check-input:checked {
+  background-color: var(--main-color);
+  border-color: var(--main-color);
 }

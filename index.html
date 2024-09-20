@@ -5,7 +5,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/logo.svg" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
@@ -15,7 +17,7 @@
       <div class="container">
         <nav>
           <div class="navbar navbar-expand-lg navbar-fixed">
-            <a class="navbar-brand logo m-0" href="#"><img src="images/logo-2.png" class="img-fluid" alt="logo" /></a>
+            <a class="navbar-brand logo m-0" href="#"><img src="images/logo.svg" class="img-fluid" alt="logo" /></a>
             <button class="navbar-toggler" data-bs-toggle="offcanvas" href="#slideheader" aria-controls="slideheader">
               <i class="fa-solid fa-bars fa-xl"></i>
             </button>
@@ -60,7 +62,7 @@
               <h1>محتار وش تطلب؟</h1>
               <p>خلي طلبك علينا وريح بالك..</p>
               <div class="mt-4 col-12">
-                <a class="btn text-white rounded-pill" target="_blank" href="#">أطلب الآن</a>
+                <a class="btn text-white rounded-pill" target="_blank" data-bs-toggle="modal" data-bs-target="#order">أطلب الآن</a>
               </div>
             </div>
           </div>
@@ -83,28 +85,28 @@
         <div class="container">
           <div class="row my-4">
             <div class="col-xl-3 col-lg-4 col-md-6 mb-xl-0 mb-3">
-              <div class="box bg-white text-center py-3 position-relative">
+              <a href="pages/index.html" class="box d-block bg-white text-center py-3 position-relative">
                 <img src="images/choose-1.svg" class="img-fluid mb-4" alt="" />
-                <a href="#" class="btn rounded-pill d-block w-75 m-auto">نسقلي زواجي</a>
-              </div>
+                <button class="btn rounded-pill w-75 m-auto">نسقلي زواجي</button>
+              </a>
             </div>
             <div class="col-xl-3 col-lg-4 col-md-6 mb-xl-0 mb-3">
-              <div class="box bg-white text-center py-3 position-relative">
+              <a href="pages/honeymoon.html" class="box d-block bg-white text-center py-3 position-relative">
                 <img src="images/choose-2.svg" class="img-fluid mb-4" alt="" />
-                <a href="#" class="btn rounded-pill d-block w-75 m-auto">احجزلي شهر عسل</a>
-              </div>
+                <button href="#" class="btn rounded-pill w-75 m-auto">احجزلي شهر عسل</button>
+              </a>
             </div>
             <div class="col-xl-3 col-lg-4 col-md-6 mb-xl-0 mb-3">
-              <div class="box bg-white text-center py-3 position-relative">
+              <a href="pages/chalet.html" class="box d-block bg-white text-center py-3 position-relative">
                 <img src="images/choose-3.svg" class="img-fluid mb-4" alt="" />
-                <a href="#" class="btn rounded-pill d-block w-75 m-auto">احجزلي قاعة أو شاليه</a>
-              </div>
+                <button href="#" class="btn rounded-pill w-75 m-auto">احجزلي قاعة أو شاليه</button>
+              </a>
             </div>
             <div class="col-xl-3 col-lg-4 col-md-6 mb-xl-0 mb-3">
-              <div class="box bg-white text-center py-3 position-relative">
+              <a href="pages/photography.html" class="box d-block bg-white text-center py-3 position-relative">
                 <img src="images/choose-4.svg" class="img-fluid mb-4" alt="" />
-                <a href="#" class="btn rounded-pill d-block w-75 m-auto">أحتاج مصور</a>
-              </div>
+                <button class="btn rounded-pill w-75 m-auto">أحتاج مصور</button>
+              </a>
             </div>
           </div>
         </div>
@@ -122,9 +124,7 @@
           <div class="mt-5 bg-marriage">
             <div class="p-lg-5 p-3">
               <h2 class="fw-bolder display-6">لا تشيل هم تكاليف زواجك وخليها علينا</h2>
-              <a href="#" class="btn rounded-pill px-5 fs-5 text-white fw-bolder p-3 mt-3" data-bs-toggle="modal" data-bs-target="#order"
-                >أطلب تمويلك الان</a
-              >
+              <a href="order_now.html" class="btn rounded-pill px-5 fs-5 text-white fw-bolder p-3 mt-3">أطلب تمويلك الان</a>
             </div>
           </div>
         </div>
@@ -178,7 +178,7 @@
         <div class="row mt-5 justify-content-between">
           <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
             <div class="logo">
-              <img src="images/logo-2.png" class="img-fluid w-75" alt="" />
+              <img src="images/logo.svg" class="img-fluid w-75" alt="" />
             </div>
           </div>
           <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
@@ -228,13 +228,13 @@
           <div class="modal-body order">
             <div class="text-center">
               <h3 class="fw-bolder">محتار وش تطلب؟</h3>
-              <p class="fw-bolder fs-5">خلي طلبك عليك وريح بالك..</p>
+              <p class="fw-bolder fs-5">خلي طلبك علينا وريح بالك..</p>
             </div>
             <div class="row mt-3">
               <div class="col-md-9 m-auto">
                 <div class="row justify-content-center my-3">
                   <div class="col-6 mb-3">
-                    <div class="box position-relative">
+                    <a href="#" class="d-block box position-relative">
                       <img src="images/order-1.png" class="img-fluid" alt="" />
                       <h5 class="fw-bolder">قاعة زفاف</h5>
                       <div class="checkbox-item">
@@ -243,11 +243,11 @@
                           <span class="checkbox_inner"></span>
                         </label>
                       </div>
-                    </div>
+                    </a>
                   </div>
                   <div class="col-6 mb-3">
-                    <div class="box position-relative">
-                      <img src="images/order-1.png" class="img-fluid" alt="" />
+                    <a href="#" class="d-block box position-relative">
+                      <img src="images/order-2.png" class="img-fluid" alt="" />
                       <h5 class="fw-bolder">شهر العسل</h5>
                       <div class="checkbox-item">
                         <label class="checkbox">
@@ -255,11 +255,11 @@
                           <span class="checkbox_inner"></span>
                         </label>
                       </div>
-                    </div>
+                    </a>
                   </div>
                   <div class="col-6 mb-3">
-                    <div class="box position-relative">
-                      <img src="images/order-1.png" class="img-fluid" alt="" />
+                    <a href="#" class="d-block box position-relative">
+                      <img src="images/order-3.png" class="img-fluid" alt="" />
                       <h5 class="fw-bolder">شاليه</h5>
                       <div class="checkbox-item">
                         <label class="checkbox">
@@ -267,11 +267,11 @@
                           <span class="checkbox_inner"></span>
                         </label>
                       </div>
-                    </div>
+                    </a>
                   </div>
                   <div class="col-6 mb-3">
-                    <div class="box position-relative">
-                      <img src="images/order-1.png" class="img-fluid" alt="" />
+                    <a href="#" class="d-block box position-relative">
+                      <img src="images/order-4.png" class="img-fluid" alt="" />
                       <h5 class="fw-bolder">تصوير</h5>
                       <div class="checkbox-item">
                         <label class="checkbox">
@@ -279,7 +279,7 @@
                           <span class="checkbox_inner"></span>
                         </label>
                       </div>
-                    </div>
+                    </a>
                   </div>
                 </div>
               </div>
