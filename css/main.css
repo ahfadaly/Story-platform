@@ -343,19 +343,18 @@ select:focus {
 }
 
 /* platform -------------------------------------------------- */
-.wedding-request .img-preview img {
+.img-preview img {
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   width: 100%;
-  height: auto;
-  object-fit: contain;
+  height: 300px;
 }
 .product-img img {
   width: 100%;
-  height: auto;
+  height: 120px;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
