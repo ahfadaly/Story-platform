@@ -201,8 +201,6 @@ select:focus {
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
 }
-.worry-marriage .bg-worry-marriage h2 {
-}
 .worry-marriage .bg-worry-marriage p {
   font-size: 25px;
   font-weight: 600;
@@ -343,15 +341,17 @@ select:focus {
 }
 
 /* platform -------------------------------------------------- */
+
 .img-preview img {
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
   width: 100%;
   height: 300px;
 }
+
 .product-img img {
   width: 100%;
   height: 120px;
@@ -361,6 +361,15 @@ select:focus {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   object-fit: cover;
+}
+
+@media (max-width: 991px) {
+  .img-preview img {
+    height: 200px;
+  }
+  .product-img img {
+    height: 90px;
+  }
 }
 .wedding-request .box {
   border-radius: 26.73px;
