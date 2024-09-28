@@ -27,7 +27,7 @@
                 </button>
               </div>
               <div class="offcanvas-body align-items-center">
-                <ul class="navbar-nav me-auto text-center list">
+                <ul class="navbar-nav m-auto text-center list">
                   <li class="nav-item">
                     <a class="nav-link active" href="#">الرئيسية</a>
                   </li>
@@ -38,12 +38,16 @@
                     <a class="nav-link" href="#about">لماذا نحن؟</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#customer">الرئيس التنفيذي</a>
+                    <a class="nav-link" href="#customer">الطلبات</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#contact">تواصل معنا</a>
                   </li>
                 </ul>
+                <div class="d-flex gap-2">
+                  <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#registr">إنشاء حساب</a>
+                  <a href="#" class="btn text-white login" data-bs-toggle="modal" data-bs-target="#login">تسجيل الدخول</a>
+                </div>
               </div>
             </div>
           </div>
@@ -156,21 +160,6 @@
 
     <!-- end about  -->
 
-    <!-- start customer-opinions  -->
-    <section class="customer-opinions mt-5 pt-5 position-relative" id="customer">
-      <div class="container">
-        <div class="title text-center">
-          <h2 class="text-h2 pb-4">الرئيس التنفيذي</h2>
-        </div>
-        <div class="mt-5">
-          <div class="border shadow-sm p-3 item d-flex justify-content-center align-items-center text-center">
-            <p class="m-0">"تجربتي مع قصة كانت رائعة. الفريق جعل يوم زفافي كما حلمت به وأكثر. أشكركم من القلب!" - سارة وعلي</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- end customer-opinions  -->
-
     <!-- start footer -->
     <footer class="footer mt-5 py-3" id="contact">
       <div class="container">
@@ -215,7 +204,16 @@
     </footer>
     <!-- end footer -->
 
-    <!-- popup ----- -->
+    <div class="whatsapp-icon-fixed">
+      <div class="elementor-icon">
+        <a class="" href="tel:+966591971366">
+          <img src="images/icons/logos_whatsapp.svg" class="img-fluid" alt="icon" />
+        </a>
+      </div>
+      <p class="fw-bolder">تواصل معنا</p>
+    </div>
+
+    <!-- popup order ----- -->
     <div class="modal modal-order" id="order" tabindex="-1" aria-labelledby="orderLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content order-content">
@@ -288,15 +286,57 @@
         </div>
       </div>
     </div>
-    <!-- popup ----- -->
 
-    <div class="whatsapp-icon-fixed">
-      <div class="elementor-icon">
-        <a class="" href="tel:+966591971366">
-          <img src="images/icons/logos_whatsapp.svg" class="img-fluid" alt="icon" />
-        </a>
+    <!-- popup login -->
+    <div class="modal login" id="login" tabindex="-1" aria-labelledby="loginLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="" class="form-label">رقم الهاتف</label>
+                <input type="number" class="form-control" placeholder="966+" />
+              </div>
+              <button href="#" type="submit" class="btn w-100 mt-2 btn-request">تسجيل دخول</button>
+            </form>
+          </div>
+        </div>
       </div>
-      <p class="fw-bolder">تواصل معنا</p>
+    </div>
+
+    <!-- popup registr -->
+    <div class="modal registr" id="registr" tabindex="-1" aria-labelledby="registrLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="" class="form-label">الاسم:</label>
+                <input type="text" class="form-control" name="" id="" />
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">رقم الهاتف</label>
+                <input type="number" class="form-control" placeholder="966+" />
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">البريد الإلكتروني:</label>
+                <input type="email" class="form-control" name="" id="" />
+              </div>
+              <div class="mb-3">
+                <input class="" type="checkbox" value="" id="flexCheckDefault" />
+                <label class="" for="flexCheckDefault">الشروط والأحكام</label>
+              </div>
+              <button type="submit" class="btn w-100 mt-2 btn-request">إنشاء حساب</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="js/all.min.js"></script>
